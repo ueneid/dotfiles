@@ -243,3 +243,10 @@ precmd() { vcs_info }
 RPROMPT='${vcs_info_msg_0_}%f'
 
 alias ll='ls -alF'
+alias ls='gls --color=auto'
+
+# homebrew
+export PATH=/usr/local/bin:$PATH
+
+# dircolors
+eval $(gdircolors ~/.dircolors-solarized)
