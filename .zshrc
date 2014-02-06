@@ -1,4 +1,5 @@
 #補完機能を使用する
+fpath=($HOME/.zsh-completions /usr/local/share/zsh-completions $fpath)
 autoload -U compinit promptinit
 compinit
 zstyle ':completion::complete:*' use-cache true
@@ -250,3 +251,9 @@ export PATH=/usr/local/bin:$PATH
 
 # dircolors
 eval $(gdircolors ~/.dircolors-solarized)
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+for D in `find $HOME/.anyenv/envs -type d -d 1`
+do
+  export PATH="$D/shims:$PATH"
+done
