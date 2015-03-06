@@ -257,3 +257,12 @@ for D in `find $HOME/.anyenv/envs -type d -d 1`
 do
   export PATH="$D/shims:$PATH"
 done
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### JAVA
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home"
+export CATALINA_HOME="/usr/local/Cellar/tomcat/7.0.53/libexec"
+export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/sbin:/usr/local/heroku/bin:/Users/eidi/.anyenv/envs/rbenv/shims:/Users/eidi/.anyenv/envs/pyenv/shims:/Users/eidi/.anyenv/envs/plenv/shims:/Users/eidi/.anyenv/envs/ndenv/shims:/Users/eidi/.anyenv/envs/rbenv/bin:/Users/eidi/.anyenv/envs/pyenv/bin:/Users/eidi/.anyenv/envs/plenv/bin:/Users/eidi/.anyenv/envs/ndenv/bin:/Users/eidi/.anyenv/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/local/heroku/bin:/Users/eidi/.anyenv/envs/rbenv/shims:/Users/eidi/.anyenv/envs/pyenv/shims:/Users/eidi/.anyenv/envs/plenv/shims:/Users/eidi/.anyenv/envs/ndenv/shims:/Users/eidi/.anyenv/envs/rbenv/bin:/Users/eidi/.anyenv/envs/pyenv/bin:/Users/eidi/.anyenv/envs/plenv/bin:/Users/eidi/.anyenv/envs/ndenv/bin:/Users/eidi/.anyenv/bin:/Users/eidi/bin:/Users/eidi/bin:/Applications/Android\ Studio.app/sdk/platform-tools
